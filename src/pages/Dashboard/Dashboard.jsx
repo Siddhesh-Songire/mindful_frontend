@@ -3,8 +3,7 @@ import React, { useState, useEffect } from "react";
 import "./Dashboard.css";
 import { Navigate } from "react-router-dom";
 import axios from "axios";
-
-const BACKEND_URL = "http://localhost:3000";
+import { BACKEND_URL } from "../../App";
 const Dashboard = () => {
   const [users, setUsers] = useState([]);
 

@@ -10,6 +10,8 @@ import Signup from "./pages/Signup/Signup";
 import "./App.css";
 import Dashboard from "./pages/Dashboard/Dashboard";
 
+export const BACKEND_URL = "https://mindful-backend.onrender.com";
+
 const App = () => {
   return (
     <Router>

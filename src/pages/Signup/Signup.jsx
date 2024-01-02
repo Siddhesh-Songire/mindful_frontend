@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Signup.css"; // Import the CSS file
 import { Link, Navigate } from "react-router-dom";
+import { BACKEND_URL } from "../../App";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const Signup = () => {
     e.preventDefault();
     console.log("Form Data:", formData);
     try {
-      const response = await fetch("http://localhost:3000/signup", {
+      const response = await fetch(`${BACKEND_URL}/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

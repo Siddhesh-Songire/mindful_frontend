@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import "./Login.css"; // Import the CSS file
+import { BACKEND_URL } from "../../App";
 
 const Login = () => {
   const [loginData, setLoginData] = useState({ email: "", password: "" });
@@ -13,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     console.log("Login Data:", loginData);
     try {
-      const response = await fetch("http://localhost:3000/login", {
+      const response = await fetch(`${BACKEND_URL}/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
