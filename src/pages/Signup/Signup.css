@@ -1,0 +1,84 @@
+/* SignupPlainStyles.css */
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  height: 70vh;
+  width: 30%;
+  height: 60%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  height: 100%;
+}
+
+.input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.radioGroup {
+  display: flex;
+  margin: 5px 0;
+  padding: 10px;
+}
+.radioGroup label {
+  padding: 0 10px;
+}
+.checkboxGroup {
+  margin: 8px 0;
+}
+
+.checkboxGroup label {
+  padding: 0 10px;
+}
+
+.dropdown {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+h4 {
+  text-align: left;
+  margin: 10px 0;
+}
+.button {
+  margin: 2rem auto;
+  padding: 10px 20px;
+  background-color: #3f51b5;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footerText {
+  margin-top: 20px;
+  color: #555;
+}
